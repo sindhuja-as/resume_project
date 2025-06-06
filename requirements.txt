@@ -1,0 +1,11 @@
+streamlit
+PyMuPDF
+python-docx
+nltk
+scikit-learn
+openai
+ollama
+requests
+python-dotenv
+rouge-score
+bert-score
