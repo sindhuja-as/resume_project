@@ -1,5 +1,5 @@
 from rouge_score import rouge_scorer
-from bert_score import score as bert_score
+#from bert_score import score as bert_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -9,7 +9,7 @@ def evaluate_resume(candidate, reference):
     rouge_scores = rouge.score(reference, candidate)
 
     # BERTScore
-    P, R, F1 = bert_score([candidate], [reference], lang="en", rescale_with_baseline=True)
+    #P, R, F1 = bert_score([candidate], [reference], lang="en", rescale_with_baseline=True)
     
 
 
@@ -23,7 +23,7 @@ def evaluate_resume(candidate, reference):
         "ROUGE-1": rouge_scores["rouge1"].fmeasure,
         "ROUGE-2": rouge_scores["rouge2"].fmeasure,
         "ROUGE-L": rouge_scores["rougeL"].fmeasure,
-        "BERTScore-F1": F1[0].item(),
+        #"BERTScore-F1": F1[0].item(),
         "Cosine Similarity":round(float(cosine_sim[0][0]), 4)
     }
 
