@@ -6,7 +6,6 @@ from docx import Document
 import nltk
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
-import ollama
 import re
 from evaluation_utils import evaluate_resume
 import logging
