@@ -4,7 +4,6 @@ python-docx
 nltk
 scikit-learn
 openai
-ollama
 requests
 python-dotenv
 rouge-score
