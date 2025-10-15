@@ -137,7 +137,7 @@ def rewrite_resume(resume_text, job_description):
 
     try:
         response = client.chat.completions.create(
-    model="mistralai/mistral-7b-instruct",
+    model="mistralai/mistral-7b-instruct-v0.2",
     messages=[
         
         {"role": "user", "content": prompt}
@@ -375,4 +375,5 @@ if page == "Resume Enhancer":
             
         
     
+
 
