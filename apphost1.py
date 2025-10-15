@@ -186,7 +186,7 @@ def generate_interview_questions(job_description, question_type, count=1):
 
     try:
         response = client.chat.completions.create(
-    model="mistralai/mistral-7b-instruct",
+    model="mistralai/mistral-7b-instruct-v0.2",
     messages=[
         
         {"role": "user", "content": prompt}
@@ -375,5 +375,6 @@ if page == "Resume Enhancer":
             
         
     
+
 
 
