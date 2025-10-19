@@ -219,7 +219,7 @@ if page == "Interview Coach":
         st.session_state.questions = []
         st.session_state.answers = []
 
-    st.title("🤖 AI Career Assistant: Interview Coach")
+    st.title("AI Career Assistant: Interview Coach")
 
     job_description = st.text_area("📝 Paste the Job Description", height=200)
     
@@ -242,7 +242,7 @@ if page == "Interview Coach":
             load_questions()
 
         if st.session_state.questions:
-            st.subheader("🧠 Interview Questions & Answers")
+            st.subheader("Interview Questions & Answers")
             for q, a in zip(st.session_state.questions, st.session_state.answers):
                 st.markdown(f"**{q}**")
                 st.markdown(f"✅ {a}")
@@ -268,7 +268,7 @@ if page == "Interview Coach":
 
 if page == "Resume Enhancer":
     ''' Module to rewrite resume based on job description'''
-    st.title("🤖 AI Career Assistant: Resume Enhancer")
+    st.title("AI Career Assistant: Resume Enhancer")
     st.subheader("Upload your resume & paste a job description")
     uploaded_file = st.file_uploader("📄 Upload Resume (PDF)", type=["pdf"])
     job_description = st.text_area("🧾 Paste Job Description")
@@ -375,6 +375,7 @@ if page == "Resume Enhancer":
             
         
     
+
 
 
 
